@@ -1,0 +1,56 @@
+# depslib dependency file v1.0
+1390942180 source:/home/frank/Desktop/hw3/cscd340w14hw3/cscd340w14hw3/shellFunctions.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	<unistd.h>
+	<sys/wait.h>
+	<fcntl.h>
+	"shellFunctions.h"
+	"linkedList.h"
+	"keyVal.h"
+	"FileUtil.h"
+
+1391043259 source:/home/frank/Desktop/hw3/cscd340w14hw3/cscd340w14hw3/cscd340_w14_hw3.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"shellFunctions.h"
+	"linkedList.h"
+	"FileUtil.h"
+	<unistd.h>
+
+1390939306 /home/frank/Desktop/hw3/cscd340w14hw3/cscd340w14hw3/shellFunctions.h
+	"linkedList.h"
+
+1390939306 source:/home/frank/Desktop/hw3/cscd340w14hw3/cscd340w14hw3/shellFunctions.h
+	"linkedList.h"
+
+1390867773 /home/frank/Desktop/hw3/cscd340w14hw3/cscd340w14hw3/linkedList.h
+	<stdio.h>
+
+1390502791 source:/home/frank/Desktop/hw3/cscd340w14hw3/cscd340w14hw3/keyVal.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"linkedList.h"
+	"keyVal.h"
+
+1390529711 /home/frank/Desktop/hw3/cscd340w14hw3/cscd340w14hw3/keyVal.h
+
+1390867773 source:/home/frank/Desktop/hw3/cscd340w14hw3/cscd340w14hw3/linkedList.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"linkedList.h"
+	"keyVal.h"
+
+1389562621 /home/frank/Desktop/hw3/cscd340w14hw3/cscd340w14hw3/FileUtil.h
+
+1389562621 source:/home/frank/Desktop/hw3/cscd340w14hw3/cscd340w14hw3/FileUtil.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"FileUtil.h"
+

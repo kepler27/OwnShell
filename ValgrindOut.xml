@@ -1,0 +1,638 @@
+<?xml version="1.0"?>
+
+<valgrindoutput>
+
+<protocolversion>4</protocolversion>
+<protocoltool>memcheck</protocoltool>
+
+<preamble>
+  <line>Memcheck, a memory error detector</line>
+  <line>Copyright (C) 2002-2011, and GNU GPL'd, by Julian Seward et al.</line>
+  <line>Using Valgrind-3.7.0 and LibVEX; rerun with -h for copyright info</line>
+  <line>Command: /home/frank/Desktop/hw3/cscd340w14hw3/cscd340w14hw3/bin/Debug/cscd340w14hw3 </line>
+</preamble>
+
+<pid>8741</pid>
+<ppid>8298</ppid>
+<tool>memcheck</tool>
+
+<args>
+  <vargv>
+    <exe>/usr/bin/valgrind.bin</exe>
+    <arg>--suppressions=/usr/lib/valgrind/debian-libc6-dbg.supp</arg>
+    <arg>--leak-check=full</arg>
+    <arg>--track-origins=yes</arg>
+    <arg>--xml=yes</arg>
+    <arg>--xml-file=/home/frank/Desktop/hw3/cscd340w14hw3/cscd340w14hw3/ValgrindOut.xml</arg>
+  </vargv>
+  <argv>
+    <exe>/home/frank/Desktop/hw3/cscd340w14hw3/cscd340w14hw3/bin/Debug/cscd340w14hw3</exe>
+    <arg></arg>
+  </argv>
+</args>
+
+<status>
+  <state>RUNNING</state>
+  <time>00:00:00:07.169 </time>
+</status>
+
+<error>
+  <unique>0x4</unique>
+  <tid>1</tid>
+  <kind>UninitCondition</kind>
+  <what>Conditional jump or move depends on uninitialised value(s)</what>
+  <stack>
+    <frame>
+      <ip>0x4C294E9</ip>
+      <obj>/usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>strlen</fn>
+      <dir>/tmp/buildd/valgrind-3.7.0/memcheck</dir>
+      <file>mc_replace_strmem.c</file>
+      <line>390</line>
+    </frame>
+    <frame>
+      <ip>0x400EDD</ip>
+      <obj>/home/frank/Desktop/hw3/cscd340w14hw3/cscd340w14hw3/bin/Debug/cscd340w14hw3</obj>
+      <fn>stripRN</fn>
+      <dir>/home/frank/Desktop/hw3/cscd340w14hw3/cscd340w14hw3</dir>
+      <file>shellFunctions.c</file>
+      <line>39</line>
+    </frame>
+    <frame>
+      <ip>0x400C30</ip>
+      <obj>/home/frank/Desktop/hw3/cscd340w14hw3/cscd340w14hw3/bin/Debug/cscd340w14hw3</obj>
+      <fn>main</fn>
+      <dir>/home/frank/Desktop/hw3/cscd340w14hw3/cscd340w14hw3</dir>
+      <file>cscd340_w14_hw3.c</file>
+      <line>14</line>
+    </frame>
+  </stack>
+  <auxwhat>Uninitialised value was created by a stack allocation</auxwhat>
+  <stack>
+    <frame>
+      <ip>0x400BEC</ip>
+      <obj>/home/frank/Desktop/hw3/cscd340w14hw3/cscd340w14hw3/bin/Debug/cscd340w14hw3</obj>
+      <fn>main</fn>
+      <dir>/home/frank/Desktop/hw3/cscd340w14hw3/cscd340w14hw3</dir>
+      <file>cscd340_w14_hw3.c</file>
+      <line>8</line>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x5</unique>
+  <tid>1</tid>
+  <kind>UninitCondition</kind>
+  <what>Conditional jump or move depends on uninitialised value(s)</what>
+  <stack>
+    <frame>
+      <ip>0x4C2A00C</ip>
+      <obj>/usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>strcmp</fn>
+      <dir>/tmp/buildd/valgrind-3.7.0/memcheck</dir>
+      <file>mc_replace_strmem.c</file>
+      <line>711</line>
+    </frame>
+    <frame>
+      <ip>0x400DEB</ip>
+      <obj>/home/frank/Desktop/hw3/cscd340w14hw3/cscd340w14hw3/bin/Debug/cscd340w14hw3</obj>
+      <fn>main</fn>
+      <dir>/home/frank/Desktop/hw3/cscd340w14hw3/cscd340w14hw3</dir>
+      <file>cscd340_w14_hw3.c</file>
+      <line>16</line>
+    </frame>
+  </stack>
+  <auxwhat>Uninitialised value was created by a stack allocation</auxwhat>
+  <stack>
+    <frame>
+      <ip>0x400BEC</ip>
+      <obj>/home/frank/Desktop/hw3/cscd340w14hw3/cscd340w14hw3/bin/Debug/cscd340w14hw3</obj>
+      <fn>main</fn>
+      <dir>/home/frank/Desktop/hw3/cscd340w14hw3/cscd340w14hw3</dir>
+      <file>cscd340_w14_hw3.c</file>
+      <line>8</line>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x6</unique>
+  <tid>1</tid>
+  <kind>UninitCondition</kind>
+  <what>Conditional jump or move depends on uninitialised value(s)</what>
+  <stack>
+    <frame>
+      <ip>0x400DEE</ip>
+      <obj>/home/frank/Desktop/hw3/cscd340w14hw3/cscd340w14hw3/bin/Debug/cscd340w14hw3</obj>
+      <fn>main</fn>
+      <dir>/home/frank/Desktop/hw3/cscd340w14hw3/cscd340w14hw3</dir>
+      <file>cscd340_w14_hw3.c</file>
+      <line>16</line>
+    </frame>
+  </stack>
+  <auxwhat>Uninitialised value was created by a stack allocation</auxwhat>
+  <stack>
+    <frame>
+      <ip>0x400BEC</ip>
+      <obj>/home/frank/Desktop/hw3/cscd340w14hw3/cscd340w14hw3/bin/Debug/cscd340w14hw3</obj>
+      <fn>main</fn>
+      <dir>/home/frank/Desktop/hw3/cscd340w14hw3/cscd340w14hw3</dir>
+      <file>cscd340_w14_hw3.c</file>
+      <line>8</line>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x7</unique>
+  <tid>1</tid>
+  <kind>UninitCondition</kind>
+  <what>Conditional jump or move depends on uninitialised value(s)</what>
+  <stack>
+    <frame>
+      <ip>0x4C2904A</ip>
+      <obj>/usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>index</fn>
+      <dir>/tmp/buildd/valgrind-3.7.0/memcheck</dir>
+      <file>mc_replace_strmem.c</file>
+      <line>209</line>
+    </frame>
+    <frame>
+      <ip>0x400C46</ip>
+      <obj>/home/frank/Desktop/hw3/cscd340w14hw3/cscd340w14hw3/bin/Debug/cscd340w14hw3</obj>
+      <fn>main</fn>
+      <dir>/home/frank/Desktop/hw3/cscd340w14hw3/cscd340w14hw3</dir>
+      <file>cscd340_w14_hw3.c</file>
+      <line>19</line>
+    </frame>
+  </stack>
+  <auxwhat>Uninitialised value was created by a stack allocation</auxwhat>
+  <stack>
+    <frame>
+      <ip>0x400BEC</ip>
+      <obj>/home/frank/Desktop/hw3/cscd340w14hw3/cscd340w14hw3/bin/Debug/cscd340w14hw3</obj>
+      <fn>main</fn>
+      <dir>/home/frank/Desktop/hw3/cscd340w14hw3/cscd340w14hw3</dir>
+      <file>cscd340_w14_hw3.c</file>
+      <line>8</line>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x8</unique>
+  <tid>1</tid>
+  <kind>UninitCondition</kind>
+  <what>Conditional jump or move depends on uninitialised value(s)</what>
+  <stack>
+    <frame>
+      <ip>0x4C2904E</ip>
+      <obj>/usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>index</fn>
+      <dir>/tmp/buildd/valgrind-3.7.0/memcheck</dir>
+      <file>mc_replace_strmem.c</file>
+      <line>209</line>
+    </frame>
+    <frame>
+      <ip>0x400C46</ip>
+      <obj>/home/frank/Desktop/hw3/cscd340w14hw3/cscd340w14hw3/bin/Debug/cscd340w14hw3</obj>
+      <fn>main</fn>
+      <dir>/home/frank/Desktop/hw3/cscd340w14hw3/cscd340w14hw3</dir>
+      <file>cscd340_w14_hw3.c</file>
+      <line>19</line>
+    </frame>
+  </stack>
+  <auxwhat>Uninitialised value was created by a stack allocation</auxwhat>
+  <stack>
+    <frame>
+      <ip>0x400BEC</ip>
+      <obj>/home/frank/Desktop/hw3/cscd340w14hw3/cscd340w14hw3/bin/Debug/cscd340w14hw3</obj>
+      <fn>main</fn>
+      <dir>/home/frank/Desktop/hw3/cscd340w14hw3/cscd340w14hw3</dir>
+      <file>cscd340_w14_hw3.c</file>
+      <line>8</line>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x9</unique>
+  <tid>1</tid>
+  <kind>UninitCondition</kind>
+  <what>Conditional jump or move depends on uninitialised value(s)</what>
+  <stack>
+    <frame>
+      <ip>0x4C2904A</ip>
+      <obj>/usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>index</fn>
+      <dir>/tmp/buildd/valgrind-3.7.0/memcheck</dir>
+      <file>mc_replace_strmem.c</file>
+      <line>209</line>
+    </frame>
+    <frame>
+      <ip>0x400C9E</ip>
+      <obj>/home/frank/Desktop/hw3/cscd340w14hw3/cscd340w14hw3/bin/Debug/cscd340w14hw3</obj>
+      <fn>main</fn>
+      <dir>/home/frank/Desktop/hw3/cscd340w14hw3/cscd340w14hw3</dir>
+      <file>cscd340_w14_hw3.c</file>
+      <line>25</line>
+    </frame>
+  </stack>
+  <auxwhat>Uninitialised value was created by a stack allocation</auxwhat>
+  <stack>
+    <frame>
+      <ip>0x400BEC</ip>
+      <obj>/home/frank/Desktop/hw3/cscd340w14hw3/cscd340w14hw3/bin/Debug/cscd340w14hw3</obj>
+      <fn>main</fn>
+      <dir>/home/frank/Desktop/hw3/cscd340w14hw3/cscd340w14hw3</dir>
+      <file>cscd340_w14_hw3.c</file>
+      <line>8</line>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0xa</unique>
+  <tid>1</tid>
+  <kind>UninitCondition</kind>
+  <what>Conditional jump or move depends on uninitialised value(s)</what>
+  <stack>
+    <frame>
+      <ip>0x4C2904E</ip>
+      <obj>/usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>index</fn>
+      <dir>/tmp/buildd/valgrind-3.7.0/memcheck</dir>
+      <file>mc_replace_strmem.c</file>
+      <line>209</line>
+    </frame>
+    <frame>
+      <ip>0x400C9E</ip>
+      <obj>/home/frank/Desktop/hw3/cscd340w14hw3/cscd340w14hw3/bin/Debug/cscd340w14hw3</obj>
+      <fn>main</fn>
+      <dir>/home/frank/Desktop/hw3/cscd340w14hw3/cscd340w14hw3</dir>
+      <file>cscd340_w14_hw3.c</file>
+      <line>25</line>
+    </frame>
+  </stack>
+  <auxwhat>Uninitialised value was created by a stack allocation</auxwhat>
+  <stack>
+    <frame>
+      <ip>0x400BEC</ip>
+      <obj>/home/frank/Desktop/hw3/cscd340w14hw3/cscd340w14hw3/bin/Debug/cscd340w14hw3</obj>
+      <fn>main</fn>
+      <dir>/home/frank/Desktop/hw3/cscd340w14hw3/cscd340w14hw3</dir>
+      <file>cscd340_w14_hw3.c</file>
+      <line>8</line>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0xb</unique>
+  <tid>1</tid>
+  <kind>UninitCondition</kind>
+  <what>Conditional jump or move depends on uninitialised value(s)</what>
+  <stack>
+    <frame>
+      <ip>0x4C2904A</ip>
+      <obj>/usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>index</fn>
+      <dir>/tmp/buildd/valgrind-3.7.0/memcheck</dir>
+      <file>mc_replace_strmem.c</file>
+      <line>209</line>
+    </frame>
+    <frame>
+      <ip>0x400CF6</ip>
+      <obj>/home/frank/Desktop/hw3/cscd340w14hw3/cscd340w14hw3/bin/Debug/cscd340w14hw3</obj>
+      <fn>main</fn>
+      <dir>/home/frank/Desktop/hw3/cscd340w14hw3/cscd340w14hw3</dir>
+      <file>cscd340_w14_hw3.c</file>
+      <line>31</line>
+    </frame>
+  </stack>
+  <auxwhat>Uninitialised value was created by a stack allocation</auxwhat>
+  <stack>
+    <frame>
+      <ip>0x400BEC</ip>
+      <obj>/home/frank/Desktop/hw3/cscd340w14hw3/cscd340w14hw3/bin/Debug/cscd340w14hw3</obj>
+      <fn>main</fn>
+      <dir>/home/frank/Desktop/hw3/cscd340w14hw3/cscd340w14hw3</dir>
+      <file>cscd340_w14_hw3.c</file>
+      <line>8</line>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0xc</unique>
+  <tid>1</tid>
+  <kind>UninitCondition</kind>
+  <what>Conditional jump or move depends on uninitialised value(s)</what>
+  <stack>
+    <frame>
+      <ip>0x4C2904E</ip>
+      <obj>/usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>index</fn>
+      <dir>/tmp/buildd/valgrind-3.7.0/memcheck</dir>
+      <file>mc_replace_strmem.c</file>
+      <line>209</line>
+    </frame>
+    <frame>
+      <ip>0x400CF6</ip>
+      <obj>/home/frank/Desktop/hw3/cscd340w14hw3/cscd340w14hw3/bin/Debug/cscd340w14hw3</obj>
+      <fn>main</fn>
+      <dir>/home/frank/Desktop/hw3/cscd340w14hw3/cscd340w14hw3</dir>
+      <file>cscd340_w14_hw3.c</file>
+      <line>31</line>
+    </frame>
+  </stack>
+  <auxwhat>Uninitialised value was created by a stack allocation</auxwhat>
+  <stack>
+    <frame>
+      <ip>0x400BEC</ip>
+      <obj>/home/frank/Desktop/hw3/cscd340w14hw3/cscd340w14hw3/bin/Debug/cscd340w14hw3</obj>
+      <fn>main</fn>
+      <dir>/home/frank/Desktop/hw3/cscd340w14hw3/cscd340w14hw3</dir>
+      <file>cscd340_w14_hw3.c</file>
+      <line>8</line>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0xd</unique>
+  <tid>1</tid>
+  <kind>UninitCondition</kind>
+  <what>Conditional jump or move depends on uninitialised value(s)</what>
+  <stack>
+    <frame>
+      <ip>0x4C2904A</ip>
+      <obj>/usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>index</fn>
+      <dir>/tmp/buildd/valgrind-3.7.0/memcheck</dir>
+      <file>mc_replace_strmem.c</file>
+      <line>209</line>
+    </frame>
+    <frame>
+      <ip>0x400D2D</ip>
+      <obj>/home/frank/Desktop/hw3/cscd340w14hw3/cscd340w14hw3/bin/Debug/cscd340w14hw3</obj>
+      <fn>main</fn>
+      <dir>/home/frank/Desktop/hw3/cscd340w14hw3/cscd340w14hw3</dir>
+      <file>cscd340_w14_hw3.c</file>
+      <line>36</line>
+    </frame>
+  </stack>
+  <auxwhat>Uninitialised value was created by a stack allocation</auxwhat>
+  <stack>
+    <frame>
+      <ip>0x400BEC</ip>
+      <obj>/home/frank/Desktop/hw3/cscd340w14hw3/cscd340w14hw3/bin/Debug/cscd340w14hw3</obj>
+      <fn>main</fn>
+      <dir>/home/frank/Desktop/hw3/cscd340w14hw3/cscd340w14hw3</dir>
+      <file>cscd340_w14_hw3.c</file>
+      <line>8</line>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0xe</unique>
+  <tid>1</tid>
+  <kind>UninitCondition</kind>
+  <what>Conditional jump or move depends on uninitialised value(s)</what>
+  <stack>
+    <frame>
+      <ip>0x4C2904E</ip>
+      <obj>/usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>index</fn>
+      <dir>/tmp/buildd/valgrind-3.7.0/memcheck</dir>
+      <file>mc_replace_strmem.c</file>
+      <line>209</line>
+    </frame>
+    <frame>
+      <ip>0x400D2D</ip>
+      <obj>/home/frank/Desktop/hw3/cscd340w14hw3/cscd340w14hw3/bin/Debug/cscd340w14hw3</obj>
+      <fn>main</fn>
+      <dir>/home/frank/Desktop/hw3/cscd340w14hw3/cscd340w14hw3</dir>
+      <file>cscd340_w14_hw3.c</file>
+      <line>36</line>
+    </frame>
+  </stack>
+  <auxwhat>Uninitialised value was created by a stack allocation</auxwhat>
+  <stack>
+    <frame>
+      <ip>0x400BEC</ip>
+      <obj>/home/frank/Desktop/hw3/cscd340w14hw3/cscd340w14hw3/bin/Debug/cscd340w14hw3</obj>
+      <fn>main</fn>
+      <dir>/home/frank/Desktop/hw3/cscd340w14hw3/cscd340w14hw3</dir>
+      <file>cscd340_w14_hw3.c</file>
+      <line>8</line>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0xf</unique>
+  <tid>1</tid>
+  <kind>UninitCondition</kind>
+  <what>Conditional jump or move depends on uninitialised value(s)</what>
+  <stack>
+    <frame>
+      <ip>0x4C294E9</ip>
+      <obj>/usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>strlen</fn>
+      <dir>/tmp/buildd/valgrind-3.7.0/memcheck</dir>
+      <file>mc_replace_strmem.c</file>
+      <line>390</line>
+    </frame>
+    <frame>
+      <ip>0x400FFF</ip>
+      <obj>/home/frank/Desktop/hw3/cscd340w14hw3/cscd340w14hw3/bin/Debug/cscd340w14hw3</obj>
+      <fn>makeArgs</fn>
+      <dir>/home/frank/Desktop/hw3/cscd340w14hw3/cscd340w14hw3</dir>
+      <file>shellFunctions.c</file>
+      <line>77</line>
+    </frame>
+    <frame>
+      <ip>0x400D82</ip>
+      <obj>/home/frank/Desktop/hw3/cscd340w14hw3/cscd340w14hw3/bin/Debug/cscd340w14hw3</obj>
+      <fn>main</fn>
+      <dir>/home/frank/Desktop/hw3/cscd340w14hw3/cscd340w14hw3</dir>
+      <file>cscd340_w14_hw3.c</file>
+      <line>43</line>
+    </frame>
+  </stack>
+  <auxwhat>Uninitialised value was created by a stack allocation</auxwhat>
+  <stack>
+    <frame>
+      <ip>0x400BEC</ip>
+      <obj>/home/frank/Desktop/hw3/cscd340w14hw3/cscd340w14hw3/bin/Debug/cscd340w14hw3</obj>
+      <fn>main</fn>
+      <dir>/home/frank/Desktop/hw3/cscd340w14hw3/cscd340w14hw3</dir>
+      <file>cscd340_w14_hw3.c</file>
+      <line>8</line>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x10</unique>
+  <tid>1</tid>
+  <kind>UninitCondition</kind>
+  <what>Conditional jump or move depends on uninitialised value(s)</what>
+  <stack>
+    <frame>
+      <ip>0x4C29531</ip>
+      <obj>/usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>strcpy</fn>
+      <dir>/tmp/buildd/valgrind-3.7.0/memcheck</dir>
+      <file>mc_replace_strmem.c</file>
+      <line>429</line>
+    </frame>
+    <frame>
+      <ip>0x401027</ip>
+      <obj>/home/frank/Desktop/hw3/cscd340w14hw3/cscd340w14hw3/bin/Debug/cscd340w14hw3</obj>
+      <fn>makeArgs</fn>
+      <dir>/home/frank/Desktop/hw3/cscd340w14hw3/cscd340w14hw3</dir>
+      <file>shellFunctions.c</file>
+      <line>78</line>
+    </frame>
+    <frame>
+      <ip>0x400D82</ip>
+      <obj>/home/frank/Desktop/hw3/cscd340w14hw3/cscd340w14hw3/bin/Debug/cscd340w14hw3</obj>
+      <fn>main</fn>
+      <dir>/home/frank/Desktop/hw3/cscd340w14hw3/cscd340w14hw3</dir>
+      <file>cscd340_w14_hw3.c</file>
+      <line>43</line>
+    </frame>
+  </stack>
+  <auxwhat>Uninitialised value was created by a stack allocation</auxwhat>
+  <stack>
+    <frame>
+      <ip>0x400BEC</ip>
+      <obj>/home/frank/Desktop/hw3/cscd340w14hw3/cscd340w14hw3/bin/Debug/cscd340w14hw3</obj>
+      <fn>main</fn>
+      <dir>/home/frank/Desktop/hw3/cscd340w14hw3/cscd340w14hw3</dir>
+      <file>cscd340_w14_hw3.c</file>
+      <line>8</line>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x11</unique>
+  <tid>1</tid>
+  <kind>InvalidRead</kind>
+  <what>Invalid read of size 1</what>
+  <stack>
+    <frame>
+      <ip>0x4C294E2</ip>
+      <obj>/usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>strlen</fn>
+      <dir>/tmp/buildd/valgrind-3.7.0/memcheck</dir>
+      <file>mc_replace_strmem.c</file>
+      <line>390</line>
+    </frame>
+    <frame>
+      <ip>0x400EDD</ip>
+      <obj>/home/frank/Desktop/hw3/cscd340w14hw3/cscd340w14hw3/bin/Debug/cscd340w14hw3</obj>
+      <fn>stripRN</fn>
+      <dir>/home/frank/Desktop/hw3/cscd340w14hw3/cscd340w14hw3</dir>
+      <file>shellFunctions.c</file>
+      <line>39</line>
+    </frame>
+    <frame>
+      <ip>0x401048</ip>
+      <obj>/home/frank/Desktop/hw3/cscd340w14hw3/cscd340w14hw3/bin/Debug/cscd340w14hw3</obj>
+      <fn>makeArgs</fn>
+      <dir>/home/frank/Desktop/hw3/cscd340w14hw3/cscd340w14hw3</dir>
+      <file>shellFunctions.c</file>
+      <line>80</line>
+    </frame>
+    <frame>
+      <ip>0x400D82</ip>
+      <obj>/home/frank/Desktop/hw3/cscd340w14hw3/cscd340w14hw3/bin/Debug/cscd340w14hw3</obj>
+      <fn>main</fn>
+      <dir>/home/frank/Desktop/hw3/cscd340w14hw3/cscd340w14hw3</dir>
+      <file>cscd340_w14_hw3.c</file>
+      <line>43</line>
+    </frame>
+  </stack>
+  <auxwhat>Address 0x0 is not stack'd, malloc'd or (recently) free'd</auxwhat>
+</error>
+
+
+<status>
+  <state>FINISHED</state>
+  <time>00:00:01:48.170 </time>
+</status>
+
+<errorcounts>
+  <pair>
+    <count>1</count>
+    <unique>0x11</unique>
+  </pair>
+  <pair>
+    <count>1</count>
+    <unique>0x10</unique>
+  </pair>
+  <pair>
+    <count>1</count>
+    <unique>0xf</unique>
+  </pair>
+  <pair>
+    <count>1</count>
+    <unique>0xe</unique>
+  </pair>
+  <pair>
+    <count>1</count>
+    <unique>0xd</unique>
+  </pair>
+  <pair>
+    <count>1</count>
+    <unique>0xc</unique>
+  </pair>
+  <pair>
+    <count>1</count>
+    <unique>0xb</unique>
+  </pair>
+  <pair>
+    <count>1</count>
+    <unique>0xa</unique>
+  </pair>
+  <pair>
+    <count>1</count>
+    <unique>0x9</unique>
+  </pair>
+  <pair>
+    <count>1</count>
+    <unique>0x8</unique>
+  </pair>
+  <pair>
+    <count>1</count>
+    <unique>0x7</unique>
+  </pair>
+  <pair>
+    <count>1</count>
+    <unique>0x6</unique>
+  </pair>
+  <pair>
+    <count>1</count>
+    <unique>0x5</unique>
+  </pair>
+  <pair>
+    <count>1</count>
+    <unique>0x4</unique>
+  </pair>
+</errorcounts>
+
+<suppcounts>
+  <pair>
+    <count>4</count>
+    <name>dl-hack3-cond-1</name>
+  </pair>
+</suppcounts>
+
+</valgrindoutput>
+

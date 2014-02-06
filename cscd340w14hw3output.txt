@@ -1,0 +1,1379 @@
+Script started on Wed 29 Jan 2014 05:03:40 PM PST
+]0;frank@KeplerDebian: ~/Desktop/hw3/cscd340w14hw3/cscd340w14hw3frank@KeplerDebian:~/Desktop/hw3/cscd340w14hw3/cscd340w14hw3$ ./mysh
+?: alias
+--------------
+Key       |Value     
+-------------
+LA        |ls -al    
+-------------
+L         |ls -l     
+---------------
+?: unalias L
+?: unalias PARTY GIRL!
+Sorry, PARTY GIRL! is not an aliased command
+?: LA
+total 3972
+drwxr-xr-x 4 frank frank    4096 Jan 29 17:03 .
+drwxr-xr-x 3 frank frank    4096 Jan 29 16:45 ..
+drwxr-xr-x 3 frank frank    4096 Jan 21 11:00 bin
+-rw-r--r-- 1 frank frank    2240 Jan 29 16:56 cscd340_w14_hw3.c
+-rw-r--r-- 1 frank frank    1605 Jan 27 12:53 cscd340w14hw3.cbp
+-rw-r--r-- 1 frank frank    1308 Jan 29 16:54 cscd340w14hw3.depend
+-rw-r--r-- 1 frank frank    1821 Jan 29 16:40 cscd340w14hw3.layout
+-rw-r--r-- 1 frank frank       0 Jan 29 17:03 cscd340w14hw3output.txt
+-rw-r--r-- 1 frank frank 1564766 Jan 22 15:26 files.lst
+-rwxrw-rw- 1 frank frank    1353 Jan 12 13:37 FileUtil.c
+-rwxrw-rw- 1 frank frank     267 Jan 12 13:37 FileUtil.h
+-rw-r--r-- 1 frank frank    4192 Jan 27 18:01 FileUtil.o
+-rw-r--r-- 1 frank frank    2593 Jan 23 10:46 keyVal.c
+-rw-r--r-- 1 frank frank    2906 Jan 23 10:10 keyVal.c~
+-rw-r--r-- 1 frank frank     459 Jan 23 18:15 keyVal.h
+-rw-r--r-- 1 frank frank     493 Jan 23 10:10 keyVal.h~
+-rw-r--r-- 1 frank frank    1712 Jan 27 18:01 keyVal.o
+-rw-r--r-- 1 frank frank   11832 Jan 27 16:09 linkedList.c
+-rw-r--r-- 1 frank frank    1198 Jan 27 16:09 linkedList.h
+-rw-r--r-- 1 frank frank    6680 Jan 27 18:01 linkedList.o
+-rwxrw-rw- 1 frank frank     394 Jan 29 16:57 makefile
+-rwxrw-rw- 1 frank frank     398 Jan 27 22:07 makefile~
+-rwxr-xr-x 1 frank frank   25058 Jan 29 16:58 mysh
+-rwxr-xr-x 1 frank frank   25082 Jan 28 12:42 myshrc
+-rwxrw-rw- 1 frank frank      68 Jan 27 10:27 .myshrc
+-rwxrw-rw- 1 frank frank    9627 Jan 29 17:01 .myshrc_history
+drwxr-xr-x 3 frank frank    4096 Jan 21 11:00 obj
+-rw-r--r-- 1 frank frank      69 Jan 28 12:41 .profile
+-rw-r--r-- 1 frank frank   11562 Jan 28 12:49 shellFunctions.c
+-rw-r--r-- 1 frank frank    1089 Jan 28 12:01 shellFunctions.h
+-rw-r--r-- 1 frank frank 2261936 Jan 28 12:01 shellFunctions.h.gch
+-rw-r--r-- 1 frank frank   15832 Jan 29 16:58 shellFunctions.o
+-rw------- 1 frank frank   18620 Jan 22 14:33 ValgrindOut.xml
+?: LA .   > la.txt
+?: wc -w < at  la.txt
+308
+?: cd ..
+?: ls
+cscd340w14hw3
+?: cd cscd340w14hw2 3
+?: ls
+bin			 FileUtil.h  linkedList.c  shellFunctions.c
+cscd340_w14_hw3.c	 FileUtil.o  linkedList.h  shellFunctions.h
+cscd340w14hw3.cbp	 keyVal.c    linkedList.o  shellFunctions.h.gch
+cscd340w14hw3.depend	 keyVal.c~   makefile	   shellFunctions.o
+cscd340w14hw3.layout	 keyVal.h    makefile~	   ValgrindOut.xml
+cscd340w14hw3output.txt  keyVal.h~   mysh
+files.lst		 keyVal.o    myshrc
+FileUtil.c		 la.txt      obj
+?: ls    LA | wc -w
+308
+?: history
+--------------
+Key       |Value     
+-------------
+2         |HISTFILESIZE=2000
+-------------
+2         |alias LA="ls -al"
+-------------
+3         |alias L="ls -l"
+-------------
+4         |HISTFILESIZE=2000
+-------------
+5         |alias LA="ls -al"
+-------------
+6         |alias L="ls -l"
+-------------
+7         |HISTFILESIZE=2000
+-------------
+8         |alias LA="ls -al"
+-------------
+9         |alias L="ls -l"
+-------------
+10        |HISTFILESIZE=2000
+-------------
+11        |alias LA="ls -al"
+-------------
+12        |alias L="ls -l"
+-------------
+13        |HISTFILESIZE=2000
+-------------
+14        |alias LA="ls -al"
+-------------
+15        |alias L="ls -l"
+-------------
+16        |visudo    
+-------------
+17        |sudo /usr/sbin/visudo
+-------------
+18        |usermod -a -G sudo frank
+-------------
+19        |sudo visudo -f /etc/sudoers
+-------------
+20        |sudo select-editor
+-------------
+21        |sudo su   
+-------------
+22        |tar       
+-------------
+23        |tar --help
+-------------
+24        |gcc cscd340_w14_lab1prob2.c 
+-------------
+25        |./a.out   
+-------------
+26        |gcc cscd340_w14_lab1prob1.c 
+-------------
+27        |valgrind ./a.out
+-------------
+28        |exit      
+-------------
+29        |gcc --version
+-------------
+30        |more /etc/*-release
+-------------
+31        |ls -la    
+-------------
+32        |cd Documents
+-------------
+33        |ls        
+-------------
+34        |cd School 
+-------------
+35        |ls        
+-------------
+36        |gcc cscd340_w14_lab1prob1.c 
+-------------
+37        |./a.out   
+-------------
+38        |valgrind cscd340_w14_lab1prob1.c 
+-------------
+39        |valgrind ./a.out
+-------------
+40        |valgrind --help
+-------------
+41        |valgrind -v ./a.out
+-------------
+42        |ls        
+-------------
+43        |valgrind a.out
+-------------
+44        |valgrind ./a.out
+-------------
+45        |sudo apt-get install valgrind
+-------------
+46        |valgrind ./a.out
+-------------
+47        |exit      
+-------------
+48        |valgrind ./a.out
+-------------
+49        |exit      
+-------------
+50        |ls        
+-------------
+51        |cd Documents
+-------------
+52        |ls        
+-------------
+53        |cd School 
+-------------
+54        |ls        
+-------------
+55        |gcc main.c
+-------------
+56        |valgrind ./a.out
+-------------
+57        |gcc main.c
+-------------
+58        |valgrind ./a.out
+-------------
+59        |gcc main.c
+-------------
+60        |valgrind ./a.out
+-------------
+61        |./a.out   
+-------------
+62        |gcc main.c
+-------------
+63        |clear     
+-------------
+64        |gcc main.c
+-------------
+65        |valgrind ./a.out
+-------------
+66        |valgrind -v ./a.out
+-------------
+67        |gcc main.c
+-------------
+68        |valgrind -v ./a.out
+-------------
+69        |valgrind -v --track-origins=yes ./a.out
+-------------
+70        |gcc main.c
+-------------
+71        |valgrind -v --track-origins=yes ./a.out
+-------------
+72        |clear     
+-------------
+73        |gcc main.c
+-------------
+74        |script cscd340_w14_lab1prob4_output
+-------------
+75        |exit      
+-------------
+76        |ls -al    
+-------------
+77        |cd ./school
+-------------
+78        |cd /school
+-------------
+79        |cd ... school
+-------------
+80        |cd .. school
+-------------
+81        |ls        
+-------------
+82        |cd frank  
+-------------
+83        |cd        
+-------------
+84        |ls        
+-------------
+85        |cd documents
+-------------
+86        |cd Documents
+-------------
+87        |ls        
+-------------
+88        |cd School/HW1/
+-------------
+89        |ls        
+-------------
+90        |make      
+-------------
+91        |..        
+-------------
+92        |.         
+-------------
+93        |cd        
+-------------
+94        |cd Documents/School/hw1/
+-------------
+95        |make      
+-------------
+96        |cd Documents/School/hw1/
+-------------
+97        |make      
+-------------
+98        |cd Documents/School/hw1/
+-------------
+99        |make      
+-------------
+100       |./hw1     
+-------------
+101       |cd Documents/School/hw1/
+-------------
+102       |make      
+-------------
+103       |./hw1     
+-------------
+104       |ls        
+-------------
+105       |cd Desktop/HW1/
+-------------
+106       |ls        
+-------------
+107       |make      
+-------------
+108       |./hw1     
+-------------
+109       |valgrind ./hw1
+-------------
+110       |make      
+-------------
+111       |valgrind ./hw1
+-------------
+112       |make      
+-------------
+113       |valgrind ./hw1
+-------------
+114       |valgrind --leach-check=full -v ./hw1
+-------------
+115       |valgrind -- leak-check=full -v ./hw1
+-------------
+116       |valgrind --leak-check=full -v ./hw1
+-------------
+117       |make      
+-------------
+118       |valgrind --leak-check=full -v ./hw1
+-------------
+119       |make      
+-------------
+120       |valgrind --leak-check=full -v ./hw1
+-------------
+121       |make      
+-------------
+122       |valgrind --leak-check=full -v ./hw1
+-------------
+123       |make      
+-------------
+124       |valgrind --leak-check=full -v ./hw1
+-------------
+125       |make      
+-------------
+126       |valgrind --leak-check=full -v ./hw1
+-------------
+127       |make      
+-------------
+128       |valgrind --leak-check=full -v ./hw1
+-------------
+129       |cd Desktop/HW1/
+-------------
+130       |make      
+-------------
+131       |valgrind --leak-check=full ./hw1
+-------------
+132       |make      
+-------------
+133       |valgrind --leak-check=full ./hw1
+-------------
+134       |make      
+-------------
+135       |valgrind --leak-check=full ./hw1
+-------------
+136       |make      
+-------------
+137       |valgrind --leak-check=full ./hw1
+-------------
+138       |make      
+-------------
+139       |valgrind --leak-check=full ./hw1
+-------------
+140       |make      
+-------------
+141       |valgrind --leak-check=full ./hw1
+-------------
+142       |make      
+-------------
+143       |valgrind --leak-check=full ./hw1
+-------------
+144       |valgrind --leak-check=full -v ./hw1
+-------------
+145       |make      
+-------------
+146       |valgrind --leak-check=full -v ./hw1
+-------------
+147       |make      
+-------------
+148       |valgrind --leak-check=full -v ./hw1
+-------------
+149       |make      
+-------------
+150       |valgrind --leak-check=full -v ./hw1
+-------------
+151       |make      
+-------------
+152       |valgrind --leak-check=full -v ./hw1
+-------------
+153       |exit      
+-------------
+154       |cd Desktop/HW1/
+-------------
+155       |make      
+-------------
+156       |valgrind --leak-check=full -v ./hw1
+-------------
+157       |make      
+-------------
+158       |valgrind --leak-check=full -v ./hw1
+-------------
+159       |cd Desktop/HW1/
+-------------
+160       |make      
+-------------
+161       |valgrind --leak-check=full -v ./hw1
+-------------
+162       |make      
+-------------
+163       |valgrind --leak-check=full -v ./hw1
+-------------
+164       |make      
+-------------
+165       |valgrind --leak-check=full -v ./hw1
+-------------
+166       |make      
+-------------
+167       |valgrind --leak-check=full -v ./hw1
+-------------
+168       |make      
+-------------
+169       |valgrind --leak-check=full -v ./hw1
+-------------
+170       |make      
+-------------
+171       |valgrind --leak-check=full -v ./hw1
+-------------
+172       |make      
+-------------
+173       |valgrind --leak-check=full -v ./hw1
+-------------
+174       |make      
+-------------
+175       |valgrind --leak-check=full -v ./hw1
+-------------
+176       |make      
+-------------
+177       |valgrind --leak-check=full -v ./hw1
+-------------
+178       |make      
+-------------
+179       |valgrind --leak-check=full -v ./hw1
+-------------
+180       |make      
+-------------
+181       |valgrind --leak-check=full -v ./hw1
+-------------
+182       |make      
+-------------
+183       |valgrind --leak-check=full -v ./hw1
+-------------
+184       |make      
+-------------
+185       |valgrind --leak-check=full -v ./hw1
+-------------
+186       |make      
+-------------
+187       |valgrind --leak-check=full -v ./hw1
+-------------
+188       |make      
+-------------
+189       |valgrind --leak-check=full -v ./hw1
+-------------
+190       |make      
+-------------
+191       |valgrind --leak-check=full -v ./hw1
+-------------
+192       |make      
+-------------
+193       |valgrind --leak-check=full -v ./hw1
+-------------
+194       |valgrind --leak-check=full --show-reachable=yes -v ./hw1
+-------------
+195       |make      
+-------------
+196       |valgrind --leak-check=full --show-reachable=yes -v ./hw1
+-------------
+197       |make      
+-------------
+198       |valgrind --leak-check=full --show-reachable=yes -v ./hw1
+-------------
+199       |cd Desktop/Lab\ 2/
+-------------
+200       |gcc main  
+-------------
+201       |ls        
+-------------
+202       |gcc syscalls.c 
+-------------
+203       |./a.out   
+-------------
+204       |gcc syscalls.c 
+-------------
+205       |./a.out   
+-------------
+206       |strace –o syscallout.txt ./a.out
+-------------
+207       |strace    
+-------------
+208       |help strace
+-------------
+209       |yum -y install strace
+-------------
+210       |install strace
+-------------
+211       |install --help
+-------------
+212       |apt-get strace
+-------------
+213       |apt-get install strace
+-------------
+214       |sudo apt-get install strace
+-------------
+215       |strace –o syscallout.txt ./a.out
+-------------
+216       |strace -o syscallout.txt ./a.out
+-------------
+217       |exit      
+-------------
+218       |cd Desktop/Lab\ 2/
+-------------
+219       |ls        
+-------------
+220       |gcc SysCalls.java 
+-------------
+221       |apt-get install gcj-jdk
+-------------
+222       |sudo apt-get install gcj-jdk
+-------------
+223       |gcj SysCalls.java 
+-------------
+224       |clear     
+-------------
+225       |gcj SysCalls.java 
+-------------
+226       |clear     
+-------------
+227       |gcj SysCalls.java 
+-------------
+228       |ls        
+-------------
+229       |clear     
+-------------
+230       |gcj SysCalls.java 
+-------------
+231       |clear     
+-------------
+232       |gcj SysCalls.java 
+-------------
+233       |ls        
+-------------
+234       |clear     
+-------------
+235       |gcj SysCalls.java 
+-------------
+236       |gcj SysCalls.java
+-------------
+237       |javac SysCalls.java
+-------------
+238       |ls        
+-------------
+239       |./a.out   
+-------------
+240       |java -cp SysCalls Main
+-------------
+241       |java -cp SysCalls main
+-------------
+242       |strace -o syscalloutjava.txt java SysCalls
+-------------
+243       |apt-get install sun-java6-jre
+-------------
+244       |sudo apt-get install sun-java6-jre
+-------------
+245       |sudo apt-get install sun-java7-jre
+-------------
+246       |apt-get update
+-------------
+247       |sudo apt-get update
+-------------
+248       |sudo apt-get upgrade
+-------------
+249       |sudo apt-get dist-upgrade
+-------------
+250       |wget --no-cookies --header "Cookie: gpw_e24=http%3A%2F%2Fwww.oracle.com" "http://download.oracle.co
+-------------
+251       |m/otn-pub/java/jdk/7u45-b18/jdk-7u4cd Desktop/HW1/
+-------------
+252       |make      
+-------------
+253       |valgrind --leak-check=full -v cscd340hw1
+-------------
+254       |valgrind --leak-check=full -v ./cscd340hw1
+-------------
+255       |make      
+-------------
+256       |valgrind --leak-check=full -v ./cscd340hw1
+-------------
+257       |make      
+-------------
+258       |valgrind --leak-check=full -v ./cscd340hw1
+-------------
+259       |make      
+-------------
+260       |valgrind --leak-check=full -v ./cscd340hw1
+-------------
+261       |make      
+-------------
+262       |valgrind --leak-check=full -v ./cscd340hw1
+-------------
+263       |make      
+-------------
+264       |valgrind --leak-check=full -v ./cscd340hw1
+-------------
+265       |make      
+-------------
+266       |valgrind --leak-check=full -v ./cscd340hw1
+-------------
+267       |exit      
+-------------
+268       |valgrind ./cscd340hw1
+-------------
+269       |exit      
+-------------
+270       |cd Desktop/HW1/
+-------------
+271       |make      
+-------------
+272       |script cscd340_w14_hw1val.txt
+-------------
+273       |exit      
+-------------
+274       |cd Desktop/Lab 3
+-------------
+275       |ls        
+-------------
+276       |cd Desktop/Lab 3/
+-------------
+277       |cd L      
+-------------
+278       |cd Desktop/Lab3
+-------------
+279       |gcc cscd340_w14_lab3.c
+-------------
+280       |./a.out   
+-------------
+281       |cd Desktop/Lab3
+-------------
+282       |gcc       
+-------------
+283       |gcc cscd340_w14_lab3.c
+-------------
+284       |./a.out   
+-------------
+285       |ls        
+-------------
+286       |ls al     
+-------------
+287       |ls -al    
+-------------
+288       |./a.out   
+-------------
+289       |gcc cscd340_w14_lab3.c
+-------------
+290       |./a.out   
+-------------
+291       |gcc cscd340_w14_lab3.c
+-------------
+292       |./a.out   
+-------------
+293       |gcc cscd340_w14_lab3.c
+-------------
+294       |./a.out   
+-------------
+295       |gcc cscd340_w14_lab3.c
+-------------
+296       |./a.out   
+-------------
+297       |gcc cscd340_w14_lab3.c
+-------------
+298       |./a.out   
+-------------
+299       |gcc cscd340_w14_lab3.c
+-------------
+300       |./a.out   
+-------------
+301       |gcc cscd340_w14_lab3.c
+-------------
+302       |./a.out   
+-------------
+303       |gcc cscd340_w14_lab3.c
+-------------
+304       |./a.out   
+-------------
+305       |gcc cscd340_w14_lab3.c
+-------------
+306       |./a.out   
+-------------
+307       |gcc cscd340_w14_lab3.c
+-------------
+308       |./a.out   
+-------------
+309       |gcc cscd340_w14_lab3.c
+-------------
+310       |./a.out   
+-------------
+311       |gcc cscd340_w14_lab3.c
+-------------
+312       |./a.out   
+-------------
+313       |gcc cscd340_w14_lab3.c
+-------------
+314       |./a.out   
+-------------
+315       |gcc cscd340_w14_lab3.c
+-------------
+316       |cd Desktop/Lab3
+-------------
+317       |ls        
+-------------
+318       |gcc cscd340_w14_lab3.c
+-------------
+319       |./a.out   
+-------------
+320       |gcc cscd340_w14_lab3.c
+-------------
+321       |./a.out   
+-------------
+322       |gcc cscd340_w14_lab3.c
+-------------
+323       |./a.out   
+-------------
+324       |cd Desktop/Lab3
+-------------
+325       |ls        
+-------------
+326       |./a.out   
+-------------
+327       |$PATH     
+-------------
+328       |ls        
+-------------
+329       |ls -al    
+-------------
+330       |gcc cscd340_w14_lab3.c
+-------------
+331       |./a.out   
+-------------
+332       |man exec  
+-------------
+333       |gcc cscd340_w14_lab3.c
+-------------
+334       |./a.out   
+-------------
+335       |gcc cscd340_w14_lab3.c
+-------------
+336       |./a.out   
+-------------
+337       |gcc cscd340_w14_lab3.c
+-------------
+338       |./a.out   
+-------------
+339       |clear     
+-------------
+340       |gcc cscd340_w14_lab3.c
+-------------
+341       |./a.out   
+-------------
+342       |cd Desktop/Lab3
+-------------
+343       |gcc cscd340_w14_lab3.c
+-------------
+344       |./a.out   
+-------------
+345       |exit      
+-------------
+346       |valgrind ./a.out
+-------------
+347       |exit      
+-------------
+348       |./a.out   
+-------------
+349       |exit      
+-------------
+350       |./a.out   
+-------------
+351       |exit      
+-------------
+352       |cd Desktop/Lab3
+-------------
+353       |gcc cscd340_w14_lab3.c
+-------------
+354       |./a.out   
+-------------
+355       |valgrind ./a.out
+-------------
+356       |gcc cscd340_w14_lab3.c
+-------------
+357       |valgrind ./a.out
+-------------
+358       |gcc cscd340_w14_lab3.c
+-------------
+359       |valgrind ./a.out
+-------------
+360       |gcc cscd340_w14_lab3.c
+-------------
+361       |valgrind ./a.out
+-------------
+362       |script cscd340lab3valgrind.txt
+-------------
+363       |script cscd340lab3out.txt
+-------------
+364       |make      
+-------------
+365       |lab3      
+-------------
+366       |./lab3    
+-------------
+367       |exit      
+-------------
+368       |gdb       
+-------------
+369       |cd obj    
+-------------
+370       |ls        
+-------------
+371       |cd boot   
+-------------
+372       |ls        
+-------------
+373       |sudo apt-get install libsdl1.2-dev; sudo apt-get install gdb
+-------------
+374       |sudo apt-get install gdb
+-------------
+375       |cd qemu   
+-------------
+376       |cd /qemu  
+-------------
+377       |cd //qemu 
+-------------
+378       |cd Desktop/HW2/qemu/
+-------------
+379       |./configure --disable-kvm --target-list="i386-softmmu x86_64-softmmu"
+-------------
+380       |make      
+-------------
+381       |sudo make install
+-------------
+382       |.         
+-------------
+383       |cd .      
+-------------
+384       |..        
+-------------
+385       |cd .      
+-------------
+386       |cd ..     
+-------------
+387       |cd w14hw2/
+-------------
+388       |make      
+-------------
+389       |make qemu 
+-------------
+390       |make qemu-gdb
+-------------
+391       |cd Desktop/Lab4
+-------------
+392       |gcc cscd340lab4prob1.c 
+-------------
+393       |a.out     
+-------------
+394       |./a.out   
+-------------
+395       |gdc ./a.out
+-------------
+396       |gdb ./a.out
+-------------
+397       |gcc cscd340lab4prob1.c 
+-------------
+398       |./a.out   
+-------------
+399       |gdb ./a.out
+-------------
+400       |gcc cscd340lab4prob1.c 
+-------------
+401       |./a.out   
+-------------
+402       |gdb ./a.out
+-------------
+403       |gcc cscd340lab4prob1.c 
+-------------
+404       |./a.out   
+-------------
+405       |gdb ./a.out
+-------------
+406       |gcc cscd340lab4prob1.c 
+-------------
+407       |./a.out   
+-------------
+408       |ls -l | wc -w
+-------------
+409       |make      
+-------------
+410       |ls        
+-------------
+411       |make      
+-------------
+412       |rn make makefile
+-------------
+413       |cp make makefile
+-------------
+414       |ls        
+-------------
+415       |rm make   
+-------------
+416       |make      
+-------------
+417       |./prob1   
+-------------
+418       |ls -l | wc -w
+-------------
+419       |ls        
+-------------
+420       |cd prob2  
+-------------
+421       |make      
+-------------
+422       |./a.out   
+-------------
+423       |./prob2   
+-------------
+424       |make      
+-------------
+425       |./prob2   
+-------------
+426       |make      
+-------------
+427       |gdb ./prob2
+-------------
+428       |nano cscd340lab4prob2.c 
+-------------
+429       |valgrind ./prob2
+-------------
+430       |make      
+-------------
+431       |valgrind ./prob2
+-------------
+432       |make      
+-------------
+433       |valgrind ./prob2
+-------------
+434       |make      
+-------------
+435       |./prob2   
+-------------
+436       |cd ..     
+-------------
+437       |cd        
+-------------
+438       |cd Desktop/ddd-3.3.12/
+-------------
+439       |ls        
+-------------
+440       |make      
+-------------
+441       |install -sh
+-------------
+442       |./configure && make
+-------------
+443       |sudo apt-get install ddd
+-------------
+444       |ddd       
+-------------
+445       |exit      
+-------------
+446       |cd Desktop/lab4
+-------------
+447       |cd Desktop/Lab4
+-------------
+448       |cd prob4  
+-------------
+449       |rm prob4  
+-------------
+450       |make      
+-------------
+451       |./prob4   
+-------------
+452       |valgrind ./prob4
+-------------
+453       |exit      
+-------------
+454       |valgrind ./prob4
+-------------
+455       |exit      
+-------------
+456       |valgrind ./prob4
+-------------
+457       |exit      
+-------------
+458       |cd Desktop/lab4
+-------------
+459       |cd Desktop/Lab4/prob4
+-------------
+460       |make      
+-------------
+461       |rm prob4  
+-------------
+462       |make      
+-------------
+463       |./prob4   
+-------------
+464       |ls -l | wc -w
+-------------
+465       |ls -al | wc -w
+-------------
+466       |./prob4   
+-------------
+467       |valgrind ./prob4
+-------------
+468       |valgrind --leak-check=full ./prob4
+-------------
+469       |rm prob4  
+-------------
+470       |make      
+-------------
+471       |rm prob4  
+-------------
+472       |make      
+-------------
+473       |valgrind --leak-check=full ./prob4
+-------------
+474       |rm prob4  
+-------------
+475       |make      
+-------------
+476       |valgrind --leak-check=full ./prob4
+-------------
+477       |rm prob4  
+-------------
+478       |make      
+-------------
+479       |valgrind --leak-check=full ./prob4
+-------------
+480       |rm prob4  
+-------------
+481       |make      
+-------------
+482       |script cscd340lab4prob4valgrind.txt
+-------------
+483       |rm prob4  
+-------------
+484       |make      
+-------------
+485       |script cscd340lab4prob4valgrind.txt
+-------------
+486       |./prob4   
+-------------
+487       |cd ..     
+-------------
+488       |cd all    
+-------------
+489       |cd ALL    
+-------------
+490       |ls        
+-------------
+491       |cd ALL    
+-------------
+492       |make      
+-------------
+493       |./prob1   
+-------------
+494       |./prob2   
+-------------
+495       |./prob3   
+-------------
+496       |./prob4   
+-------------
+497       |exit      
+-------------
+498       |b *0x7c00 
+-------------
+499       |gdb       
+-------------
+500       |cd Desktop/
+-------------
+501       |ls        
+-------------
+502       |cd HW2    
+-------------
+503       |cd w14hw2/
+-------------
+504       |make qemu-gdb
+-------------
+505       |make qemu 
+-------------
+506       |make qemu-gdb
+-------------
+507       |objdump -h obj/kern/kernel
+-------------
+508       |gdb       
+-------------
+509       |si        
+-------------
+510       |gdb       
+-------------
+511       |cd Desktop/
+-------------
+512       |cd hw3    
+-------------
+513       |cd hw2    
+-------------
+514       |ls        
+-------------
+515       |cd HW2    
+-------------
+516       |ls        
+-------------
+517       |cd w14hw2/
+-------------
+518       |make qemu-gdb
+-------------
+519       |gdb       
+-------------
+520       |cd Desktop/HW2
+-------------
+521       |ls        
+-------------
+522       |cd w14hw2/
+-------------
+523       |make qemu-gdb
+-------------
+524       |cd Downloads/
+-------------
+525       |ls        
+-------------
+526       |cd debian-stable/
+-------------
+527       |ls        
+-------------
+528       |cd i386/  
+-------------
+529       |sudo dpkg -i *.deb
+-------------
+530       |..        
+-------------
+531       |cd ..     
+-------------
+532       |cd .      
+-------------
+533       |cd..      
+-------------
+534       |cd ..     
+-------------
+535       |ls        
+-------------
+536       |cd        
+-------------
+537       |cd Downloads/
+-------------
+538       |cd debian-stable/
+-------------
+539       |cd amd64/ 
+-------------
+540       |sudo dpkg -i *.deb
+-------------
+541       |exit      
+-------------
+542       |sudo apt-get install -f
+-------------
+543       |man waitpid
+-------------
+544       |man execvp
+-------------
+545       |cd Desktop/hw3/
+-------------
+546       |ls        
+-------------
+547       |cd cscd340w14hw3/
+-------------
+548       |ls        
+-------------
+549       |echo < ls.txt
+-------------
+550       |cat < ls.txt
+-------------
+551       |ls -al    
+-------------
+552       |ls -al&   
+-------------
+553       |ls -al    
+-------------
+554       |./a.out   
+-------------
+555       |exit      
+-------------
+556       |cd Desktop/Lab5/
+-------------
+557       |ls        
+-------------
+558       |cd part1  
+-------------
+559       |cd part 1 
+-------------
+560       |cd part\ 1
+-------------
+561       |ls        
+-------------
+562       |cd        
+-------------
+563       |cd Desktop/Lab5/
+-------------
+564       |cd part\ 1
+-------------
+565       |cd lab5part1/
+-------------
+566       |ls        
+-------------
+567       |gcc main.c -lpthread
+-------------
+568       |./a.out   
+-------------
+569       |gcc main.c -lpthread
+-------------
+570       |valgrind ./a.out
+-------------
+571       |valgrind -v ./a.out
+-------------
+572       |script lab51output.txt
+-------------
+573       |cc        
+-------------
+574       |cd ..     
+-------------
+575       |/part /2  
+-------------
+576       |ls        
+-------------
+577       |cd part\ 2
+-------------
+578       |cd lab5part2/
+-------------
+579       |ls        
+-------------
+580       |gcc main.c -lpthread
+-------------
+581       |valgrind ./a.out 10 5
+-------------
+582       |./a.out 10 5
+-------------
+583       |gcc main.c -lpthread
+-------------
+584       |./a.out 10 5
+-------------
+585       |gcc main.c -lpthread
+-------------
+586       |./a.out 10 5
+-------------
+587       |valgrind ./a.out 10 5
+-------------
+588       |valgrind --leack-check=full  ./a.out 10 5
+-------------
+589       |valgrind --leak-check=full  ./a.out 10 5
+-------------
+590       |gcc main.c -lpthread
+-------------
+591       |valgrind --leak-check=full  ./a.out 10 5
+-------------
+592       |gcc main.c -lpthread
+-------------
+593       |valgrind --leak-check=full  ./a.out 10 5
+-------------
+594       |valgrind --leak-check=full  --show-reachable=yes ./a.out 10 5
+-------------
+595       |gcc main.c -lpthread
+-------------
+596       |valgrind --leak-check=full  --show-reachable=yes ./a.out 10 5
+-------------
+597       |valgrind ./a.out
+-------------
+598       |gcc main.c -lpthread
+-------------
+599       |valgrind ./a.out
+-------------
+600       |gcc main.c -lpthread
+-------------
+601       |valgrind --leak-check=full  --show-reachable=yes ./a.out 10 5
+-------------
+602       |gcc main.c -lpthread
+-------------
+603       |valgrind --leak-check=full  --show-reachable=yes ./a.out 10 5
+-------------
+604       |gcc main.c -lpthread
+-------------
+605       |valgrind --leak-check=full  --show-reachable=yes ./a.out 10 5
+-------------
+606       |cd Desktop/Lab5/part\ 2/lab5part2/
+-------------
+607       |gcc main.c -lpthread
+-------------
+608       |valgrind --leak-check=full  --show-reachable=yes ./a.out 10 5
+-------------
+609       |cd Desktop/Lab5/
+-------------
+610       |make      
+-------------
+611       |make all  
+-------------
+612       |make prob1
+-------------
+613       |make prob2
+-------------
+614       |ls        
+-------------
+615       |cd..      
+-------------
+616       |cd ..     
+-------------
+617       |ls        
+-------------
+618       |hist      
+-------------
+619       |history   
+-------------
+620       |echo $PATH
+-------------
+621       |PATH="/usr/sbin"
+-------------
+622       |echo $PATH
+-------------
+623       |echo PATH 
+-------------
+624       |echo $PATH
+-------------
+625       |PATH=$PATH:/usr/sbin
+-------------
+626       |echo PATH 
+-------------
+627       |echo $PATH
+-------------
+628       |LA        
+-------------
+629       |history   
+-------------
+630       |LA        
+-------------
+631       |history   
+-------------
+632       |unalias L 
+-------------
+633       |history   
+-------------
+634       |unalias L 
+-------------
+635       |alias     
+-------------
+636       |history   
+-------------
+637       |LA        
+-------------
+638       |cd ..     
+-------------
+639       |cd cscd340w14hw3
+-------------
+640       |ls > test.txt
+-------------
+641       |alias     
+-------------
+642       |unalias L 
+-------------
+643       |unalias PARTY GIRL!
+-------------
+644       |LA        
+-------------
+645       |LA > la.txt
+-------------
+646       |wc -w < la.txt
+-------------
+647       |cd ..     
+-------------
+648       |ls        
+-------------
+649       |cd cscd340w14hw3
+-------------
+650       |ls        
+-------------
+651       |LA | wc -w
+-------------
+652       |history   
+---------------
+?: ei xit
+]0;frank@KeplerDebian: ~/Desktop/hw3/cscd340w14hw3/cscd340w14hw3frank@KeplerDebian:~/Desktop/hw3/cscd340w14hw3/cscd340w14hw3$ exit
+exit
+
+Script done on Wed 29 Jan 2014 05:05:23 PM PST
